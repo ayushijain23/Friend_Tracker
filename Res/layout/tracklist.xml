@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1">
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:id="@+id/mobilenoid"
+        android:inputType="phone" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btncontact"
+            android:src="@drawable/contact"
+            android:scaleType="centerCrop"
+            android:background="@color/White" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnsearch"
+            android:src="@drawable/download"
+            android:scaleType="fitCenter"
+            android:background="@color/White" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/fdpic"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:id="@+id/listview"
+        android:layout_weight="1.36" />
+</LinearLayout>
